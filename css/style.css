@@ -1,0 +1,113 @@
+/* Aplica estilos globais a todos os elementos da página */
+* {
+  box-sizing: border-box; /* Define que o tamanho dos elementos deve incluir bordas e padding */
+  margin: 0; /* Remove as margens padrão de todos os elementos */
+  padding: 0; /* Remove o padding padrão de todos os elementos */
+  font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o conteúdo da página */
+}
+
+/* Estilos do corpo da página */
+body {
+  background: #fffba6; /* Define a cor de fundo escura para o corpo da página */
+  width: 100%; /* Define a largura como 100% da tela */
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  display: flex; /* Usa flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Estilos do contêiner principal */
+.container {
+  background-color: #fafafa; /* Define a cor de fundo do contêiner como clara */
+  border-radius: 14px; /* Adiciona bordas arredondadas ao contêiner */
+  margin: 14px; /* Define uma margem de 14px ao redor do contêiner */
+  max-width: 600px; /* Define a largura máxima do contêiner como 600px */
+  width: 100%; /* Define a largura como 100% para que ocupe toda a tela até o máximo */
+  box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5); /* Adiciona um efeito de sombra no contêiner */
+  overflow: hidden; /* Impede que o conteúdo transborde do contêiner */
+}
+
+/* Estilos do cabeçalho (seção .header) */
+.header {
+  background: linear-gradient(
+    120deg,
+    #eed59a 0%,
+    #99805d 100%
+  ); /* Gradiente de cores no fundo */
+  padding: 24px; /* Espaçamento interno de 24px */
+  text-align: center; /* Centraliza o texto */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Estilos do formulário */
+.form {
+  padding: 18px; /* Espaçamento interno de 18px */
+}
+
+/* Estilos de cada item do formulário */
+.form-content {
+  margin-bottom: 8px; /* Espaçamento inferior de 8px */
+  padding-bottom: 18px; /* Espaçamento inferior de 18px */
+  position: relative; /* Necessário para o posicionamento do texto de erro */
+}
+
+/* Estilos para o rótulo de cada campo */
+.form-content label {
+  display: inline-block; /* Faz o rótulo se comportar como um bloco inline */
+  margin-bottom: 4px; /* Espaço entre o rótulo e o campo de entrada */
+}
+
+/* Estilos para o campo de entrada de texto */
+.form-content input {
+  display: block; /* Faz o input ocupar toda a largura disponível */
+  width: 100%; /* Garante que o input ocupe 100% da largura do seu contêiner */
+  border-radius: 8px; /* Arredonda as bordas do campo de entrada */
+  padding: 8px; /* Adiciona espaçamento interno dentro do input */
+  border: 2px solid #dfdfdf; /* Define uma borda cinza-clara ao redor do input */
+}
+
+/* Estilos para a tag <a> que exibirá mensagens de erro */
+.form-content a {
+  position: absolute; /* Posiciona a mensagem de erro absolutamente em relação ao contêiner */
+  bottom: -8px; /* Coloca a mensagem logo abaixo do input */
+  left: 0; /* Alinha a mensagem à esquerda */
+  visibility: hidden; /* Inicialmente, a mensagem de erro está invisível */
+}
+
+/* Estilos do botão de envio do formulário */
+.form button {
+  background-color: #3acbf0; /* Cor de fundo azul para o botão */
+  color: #fff; /* Cor do texto do botão em branco */
+  width: 100%; /* O botão ocupa toda a largura disponível */
+  border-radius: 14px; /* Bordas arredondadas para o botão */
+  padding: 10px; /* Espaçamento interno de 10px */
+  border: 0; /* Remove a borda padrão do botão */
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+  cursor: pointer; /* Muda o cursor para um ponteiro quando o usuário passa o mouse sobre o botão */
+  margin-top: 14px; /* Espaço acima do botão */
+}
+
+/* Estilos quando há erro em um campo de formulário */
+.form-content.error input {
+  border-color: #ff3b25; /* Muda a cor da borda do campo para vermelho quando há erro */
+}
+
+/* Estilos para a mensagem de erro */
+.form-content.error a {
+  color: #ff3b25; /* Define a cor da mensagem de erro como vermelho */
+  visibility: visible; /* Torna a mensagem de erro visível quando o campo tem erro */
+}
+
+#link {
+  display: block; /* Isso faz o link se comportar como um bloco, permitindo margens */
+  margin-left: 10px; /* Afasta da margem esquerda */
+  margin-top: 0px; /* Opcional: adiciona espaçamento acima */
+}
+
+#logo {
+  position: absolute; /* Posiciona a imagem fora do fluxo normal */
+  top: 20px; /* Define a distância do topo */
+  left: 20px; /* Define a distância da esquerda */
+  width: 100px; /* Ajusta o tamanho da largura da imagem */
+  height: auto; /* Mantém a proporção original */
+}

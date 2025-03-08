@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Papinho</title>
+  </head>
+  <body>
+    <img src="/css/logo_papinho.png" id="logo" />
+    <div class="container">
+      <section class="header">
+        <h2>login</h2>
+      </section>
+
+      <form action="./index_back.php" id="log" class="login" method="post">
+        <div class="form-content">
+          <label for="usuario">Usuario</label>
+          <input
+            type="text"
+            id="usuario"
+            name="email"
+            placeholder="Digite seu usuario..."
+          />
+          <a>aqui vai a msg de erro</a>
+        </div>
+
+        <div class="form-content">
+          <label for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Digite sua senha..."
+          />
+          <a>aqui vai a msg de erro</a>
+        </div>
+        <button type="submit">acessar</button>
+        <a href="/cadastro/login_front.html " id="link">cadastre-se</a>
+      </form>
+    </div>
+  </body>
+</html>
