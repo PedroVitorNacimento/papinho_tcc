@@ -2,6 +2,7 @@
 require_once('./conexao_banco');
 
 echo 123;
+echo 456;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Captura os dados enviados
