@@ -1,6 +1,8 @@
 <?php
 require_once('./conexao_banco');
 
+echo 123;
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Captura os dados enviados
     $username = $_POST['username'];
