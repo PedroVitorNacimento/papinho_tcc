@@ -1,5 +1,6 @@
 <?php
 require_once('./conexao_banco');
+echo "testeeeeee";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Captura os dados enviados
